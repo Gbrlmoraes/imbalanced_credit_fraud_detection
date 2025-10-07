@@ -8,10 +8,10 @@ DATA_DIR = os.path.join(ROOT_DIR, 'data')
 
 def main():
     kaggle.api.authenticate()
-    kaggle.api.dataset_download_file(
-        dataset='nelgiriyewithana/credit-card-fraud-detection-dataset-2023',
-        file_name='creditcard_2023.csv',
+    kaggle.api.dataset_download_files(
+        dataset='mlg-ulb/creditcardfraud',
         path=DATA_DIR,
+        unzip=True,
     )
 
 
