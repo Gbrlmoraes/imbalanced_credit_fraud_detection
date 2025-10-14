@@ -208,3 +208,10 @@ __marimo__/
 
 # Dataset
 data/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Plots
+*.png
