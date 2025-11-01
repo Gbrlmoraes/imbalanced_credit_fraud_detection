@@ -13,6 +13,7 @@ dependencies = [
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
     "taskipy>=1.14.1",
+    "xgboost>=3.1.1",
 ]
 
 [dependency-groups]
