@@ -212,6 +212,7 @@ data/
 # MLflow
 mlruns/
 mlartifacts/
+mlflow.db
 
 # Plots
 *.png
