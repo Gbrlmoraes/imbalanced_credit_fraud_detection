@@ -13,13 +13,13 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
-    "taskipy>=1.14.1",
     "xgboost>=3.1.1",
 ]
 
 [dependency-groups]
 dev = [
     "ruff>=0.13.3",
+    "taskipy>=1.14.1",
 ]
 
 [tool.ruff.lint]
@@ -34,4 +34,4 @@ quote-style = 'single'
 pre_lint = 'ruff format'
 lint = 'ruff check --fix'
 
-mlflow = 'mlflow server'
+mlflow = 'mlflow server --backend-store-uri file:///C:/mlflow --default-artifact-root file:///C:/mlflow --host 127.0.0.1 --port 5000'
